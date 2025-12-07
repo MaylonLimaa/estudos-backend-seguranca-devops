@@ -1,6 +1,11 @@
-# Fundamentos Python
+# Etapa 0 – Fundamentos de Programação (Python básico)
+## Objetivo: consolidar lógica, estruturas e sintaxe Python.
 
-Objetivo:
-- Consolidar lógica de programação
-- Revisar tipos, variáveis, loops, condicionais
-- Aprender modularização e funções
+- Variáveis, tipos de dados e operadores ✅
+- Condicionais (if/else) ✅
+- Loops (for, while) ✅
+- Funções / métodos ✅
+- Listas, dicionários, tuplas e conjuntos ⚠
+- Entrada / saída ✅
+- Módulos / pacotes ✅
+- Tratamento de erros (try/except) ⚠
