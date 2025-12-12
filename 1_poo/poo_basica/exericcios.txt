@@ -1,0 +1,122 @@
+🟦 EXERCÍCIO 1 — Sistema de Usuários (básico)
+
+Nível: ⭐
+
+Crie uma classe chamada Usuario, com:
+
+Atributos (no __init__):
+
+nome
+
+email
+
+senha
+
+Métodos:
+
+exibir_info() → imprime o nome e email
+
+trocar_senha(nova_senha) → muda a senha do objeto
+
+Tarefa principal:
+
+instanciar dois usuários diferentes
+
+trocar a senha de um deles
+
+exibir as informações dos dois
+
+Objetivo: entender objetos diferentes criados pela mesma classe.
+
+🟩 EXERCÍCIO 2 — Produto e Estoque (intermediário)
+
+Nível: ⭐⭐
+
+Crie uma classe Produto.
+
+Atributos:
+
+nome
+
+preco
+
+quantidade_em_estoque
+
+Métodos:
+
+vender(qtd)
+
+diminui a quantidade
+
+se faltar estoque, deve avisar
+
+repor(qtd)
+
+adiciona ao estoque
+
+exibir()
+
+mostra todas as informações do produto
+
+Tarefa principal:
+
+Criar 1 produto
+
+Vender uma quantidade
+
+Tentar vender MAIS do que tem no estoque (para testar a lógica)
+
+Repor o estoque
+
+Exibir o produto no final
+
+Objetivo: entender métodos que mudam o estado do objeto.
+
+🟧 EXERCÍCIO 3 — Gerenciador de Tarefas (avançado)
+
+Nível: ⭐⭐⭐
+
+Crie uma classe Tarefa.
+
+Atributos:
+
+titulo
+
+descricao
+
+concluida (booleano)
+
+Métodos:
+
+concluir() → marca como concluída
+
+exibir() → mostra título, status (concluída ou não) e descrição
+
+Agora crie uma classe GerenciadorDeTarefas:
+
+Atributo:
+
+lista_de_tarefas (começa vazia)
+
+Métodos:
+
+adicionar_tarefa(tarefa)
+
+listar_tarefas()
+
+concluir_tarefa(titulo) (procura pela tarefa com esse título e marca como concluída)
+
+Tarefa principal:
+
+Criar o gerenciador
+
+Adicionar 3 tarefas
+
+Listar todas
+
+Concluir uma tarefa
+
+Listar novamente para ver a diferença
+
+Objetivo:
+treinar classes trabalhando com outras classes (mais próximo de sistemas reais).
