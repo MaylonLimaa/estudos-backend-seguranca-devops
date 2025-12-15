@@ -1,0 +1,27 @@
+🟧 Exercício — Sistema de Pedidos (POO)
+
+Crie um sistema que represente o funcionamento básico de uma loja.
+
+O sistema deve permitir:
+
+O cadastro de clientes.
+
+A existência de produtos, independentemente de pedidos.
+
+A criação de pedidos feitos por clientes.
+
+A inclusão de produtos em pedidos.
+
+A verificação de informações relacionadas ao pedido, como quem o realizou e quais produtos estão associados.
+
+Regras importantes:
+
+Um pedido não pode existir sem um cliente.
+
+Um produto pode existir sem estar em um pedido.
+
+Um cliente pode realizar mais de um pedido.
+
+O sistema deve permitir que diferentes partes interajam entre si, respeitando responsabilidades e limites de acesso.
+
+O objetivo é modelar o sistema utilizando Programação Orientada a Objetos, aplicando encapsulamento e os diferentes tipos de relacionamento entre classes.
