@@ -3,8 +3,8 @@
 
 - Conceito de classe / objeto ✅
 - Atributos / métodos ✅
-- Encapsulamento ⚠
+- Encapsulamento ✅
 - Herança ⚠
 - Polimorfismo ⚠
+- Abstração ⚠
 - Composição ⚠
-- Projeto prático: login/cadastro em Python ⚠
