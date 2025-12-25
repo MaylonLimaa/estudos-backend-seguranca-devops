@@ -1,13 +1,14 @@
 """
 Polimorfismo: capacidade de objetos diferentes responderem ao mesmo método de maneiras distintas.
-No exemplo, todos os seres vivos podem "falar", mas cada tipo de ser vivo tem seu comportamento próprio.
+No exemplo, todos os seres vivos podem "falar", 
+mas cada tipo de ser vivo tem seu comportamento próprio.
 """
 
 class SerVivo():
     """Classe raiz abstrata"""
     def __init__(self, especie):
         self.especie = especie
-    
+
     def respirar(self):
         """Todo ser vivo deve respirar"""
         print('Respira')
@@ -18,7 +19,7 @@ class Animal(SerVivo):
     def __init__(self, especie, nome):
         super().__init__(especie)
         self.nome = nome
-    
+
     def falar(self, msg=None):
         """Método que pode ser sobrescrito (override)"""
         if msg:
@@ -26,13 +27,7 @@ class Animal(SerVivo):
         else:
             print('Som Genérico')
 
-
-class Humano():
-    """Classe vazia para demonstrar herança múltipla"""
-    pass
-
-
-class Pessoa(Animal, Humano):
+class Pessoa(Animal):
     """Herança múltipla, classe folha"""
     def falar(self, msg=None):
         """Override do método Animal.falar"""
