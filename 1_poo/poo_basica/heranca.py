@@ -58,7 +58,6 @@ class Animal(SerVivo):
             print('Som Genérico')
         else:
             print(f'{self.nome} diz: {msg}')
-
 class Humano():
     """
     Classe vazia apenas para demonstrar herança multipla
