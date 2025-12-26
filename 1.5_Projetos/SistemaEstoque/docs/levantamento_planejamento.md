@@ -29,6 +29,7 @@ A classe Produto será responsável por representar um produto do sistema.
 ### Atributos:
 - Quantidade em estoque
 - Preço
+- Nome
 
 ### Métodos
 - adicionarProduto()
@@ -52,6 +53,18 @@ A classe Relatório será responsável por gerar e exibir as informações do si
 
 ### Método:
 - exibirRelatorio()
+- calcMenor()
+- calcMaior()
 
 Essa classe terá um relacionamento de composição com os produtos, pois depende dos dados existentes na database.
 Ela receberá o dicionário de produtos para análise, sem controlar o ciclo de vida desses objetos.
+
+## Ferramentas
+- diagrams.net (draw.io) – Criação de diagramas UML
+
+## Linguagem escolhida
+O sistema será desenvolvido em Python, por ser uma linguagem de alto nível,
+com sintaxe simples, forte suporte à Programação Orientada a Objetos e
+amplamente utilizada no desenvolvimento de sistemas de pequeno e médio porte.
+Além disso, a escolha do Python está alinhada com o foco atual dos estudos,
+permitindo maior aprofundamento na linguagem durante o desenvolvimento do projeto.
