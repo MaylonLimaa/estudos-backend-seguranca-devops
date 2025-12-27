@@ -1,8 +1,12 @@
-import produto
-
+"""
+Módulo para a classe relatório
+"""
 class Relatorio:
     """
     A classe relatório exibe dados sobre produto
+    Principalmente:
+    Quais produtos existem e suas informações
+    Produto com o maior e menor valor total
     """
 
     def __init__(self, pdt):
@@ -12,8 +16,8 @@ class Relatorio:
         :param pdt: lista de produtos
         """
         self.__produtos = pdt
-        self.__menorPdt = None
-        self.__maiorPdt = None
+        self.__menor_pdt = None
+        self.__maior_pdt = None
         self.__nome_maior = ''
         self.__nome_menor = ''
 
@@ -21,13 +25,13 @@ class Relatorio:
         """
         O método exibe os dados do produto
         """
-        self.__menorPdt = self.__calc_menor()
-        self.__maiorPdt = self.__calc_maior()
+        self.__menor_pdt = self.__calc_menor()
+        self.__maior_pdt = self.__calc_maior()
 
-        for id, pdt in self.__produtos.items():
-            print(f'ID: {id} | {pdt}')
-        print(f'{self.__nome_menor} é o produto com menor valor total. Custo total {self.__menorPdt}')
-        print(f'{self.__nome_maior} é o produto com maior valor total. Custo total {self.__maiorPdt}')
+        for id_pdt, pdt in self.__produtos.items():
+            print(f'ID: {id_pdt} | {pdt}')
+        print(f'{self.__nome_menor} é o produto com menor valor total. Total R$ {self.__menor_pdt}')
+        print(f'{self.__nome_maior} é o produto com maior valor total. Total R$ {self.__maior_pdt}')
     def __calc_menor(self):
         """
         O método calcula o menor valor
@@ -53,4 +57,3 @@ class Relatorio:
                 maior = valortotal
                 self.__nome_maior = pdt.nome
         return maior
-
