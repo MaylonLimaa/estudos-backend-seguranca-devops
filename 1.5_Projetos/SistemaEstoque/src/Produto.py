@@ -10,7 +10,7 @@ class Produto:
         nascer válido
 
         :param nome: nome do produto
-        :param preco: preço do protuo
+        :param preco: preço do produto
         """
         if not nome or nome.isnumeric():
             raise ValueError('Produto não pode ser vazio')
@@ -22,7 +22,7 @@ class Produto:
         self.__nome = nome
         self.__preco = preco
         self.__quantidade = qtd
-    
+
     def __str__(self):
         """
         Método especial
@@ -35,7 +35,6 @@ class Produto:
         Método que adiciona um produto em quantidade.
 
         :param qtd: quantidade do produto
-        :param id: referencia o objeto
 
         não tem retorno
         """
@@ -45,7 +44,6 @@ class Produto:
         Método que remove um produto, em quantidade ou existencia.
         
         :param qtd: quantidade do produto
-        :param id: referencia o objeto
 
         retorna a quantidade que não foi possível subtrair do estoque
         """
@@ -56,3 +54,21 @@ class Produto:
 
         self.__quantidade -= qtd
         return 0
+
+    @property
+    def quantidade(self):
+        """
+        Método getter de quantidade
+        """
+        return self.__quantidade
+
+    @property
+    def nome(self):
+        """
+        Método getter de nome
+        """
+        return self.__nome
+
+    @property
+    def preco(self):
+        return self.__preco
