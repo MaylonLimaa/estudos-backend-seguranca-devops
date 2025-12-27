@@ -1,3 +1,6 @@
+"""
+Módulo para a classe produto
+"""
 class Produto:
     """
     A classe produto representa os produtos do sistema
@@ -71,4 +74,7 @@ class Produto:
 
     @property
     def preco(self):
+        """
+        Método getter de preço
+        """
         return self.__preco
