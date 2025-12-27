@@ -17,25 +17,26 @@ Todos os projetos podem evoluir futuramente para incorporar **APIs, bancos de da
 
 ## **Breve Introdução dos Projetos**
 
-### 1. Sistema de Estoque Inteligente
+### 1. Sistema de Estoque Inteligente ✅ 
 Gerencia produtos em um estoque, permitindo **adicionar, remover e gerar relatórios**.  
 Inclui alertas de estoque baixo e cálculos de valor total dos produtos.  
 **Aprendizado:** listas, dicionários, funções, loops, condicionais e lógica de inventário.
 
-### 2. Sistema de Controle de Alunos
+
+### 2. Sistema de Controle de Alunos 🔄 Em andamento
 Gerencia informações de alunos e suas notas, podendo **cadastrar, consultar, atualizar e calcular médias**.  
 Projeto escalável para integração com **API, banco de dados e relatórios automáticos**.  
 **Aprendizado:** manipulação de dados, funções, listas/dicionários e POO para representar alunos e turmas.
 
-### 3. Sistema de Reservas Diferenciado
+### 3. Sistema de Reservas Diferenciado ❌
 Um projeto de lógica **fora do padrão alunos/estoque**, que trabalha com reservas ou agendamentos (como hotéis, salas ou eventos).  
 **Aprendizado:** controle de disponibilidade, conflitos de agendamento, loops e condicional complexa.
 
-### 4. Biblioteca Math – Recriação Total
+### 4. Biblioteca Math – Recriação Total ❌
 Recriação completa da biblioteca `math` **sem usar o módulo original**, implementando funções básicas, avançadas, trigonométricas e estatísticas.  
 **Aprendizado:** funções matemáticas do zero, lógica, loops, listas e modularização.
 
-### 5. Jogo de Adivinhação
+### 5. Jogo de Adivinhação ❌
 Um jogo onde o usuário tenta **adivinhar um número sorteado pelo programa**, recebendo dicas de “maior” ou “menor”.  
 O jogo pode ser escalado para **pontuação, múltiplos níveis e estatísticas de acerto**.  
 **Aprendizado:** loops, condicionais, lógica de controle, funções e possibilidade de aplicar POO para gerenciar jogo e jogador.
