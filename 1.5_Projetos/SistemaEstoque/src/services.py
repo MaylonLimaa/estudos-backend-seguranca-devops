@@ -1,3 +1,6 @@
+"""
+Neste módulo estão as funções de requisição.
+"""
 import produto
 import relatorio
 
@@ -39,7 +42,7 @@ def cadastro(estoque, cont):
         print('Vamos analisar a situação o mais breve possível!')
     return cont
 
-def adicionar(estoque):
+def adicionar(estoque, cont):
     """
     chama o método para adicionar o produto
     
@@ -51,8 +54,8 @@ def adicionar(estoque):
     while True:
         try:
             qtd = int(input('Qual a quantidade que vai adicionar? '))
-            id = input('Digite o ID do produto: ')
-            if 'pdt' not in id:
+            id_pdt = input('Digite o ID do produto: ')
+            if 'pdt' not in id_pdt:
                 # Não elimina o risco de gerar produtos indevidos mas mitiga um pouco
                 raise ValueError('ID inválido')
             break
@@ -64,13 +67,13 @@ def adicionar(estoque):
             print('Por favor, tente novamente mais tarde!')
             print('Vamos analisar a situação o mais breve possível!')
 
-    if id not in estoque:
+    if id_pdt not in estoque:
         cadastro(estoque, cont)
         return
     if qtd <= 0:
         print('A quantidade adicionada precisa ser maior que 0!')
     else:
-        estoque[id].adicionar_produto(qtd)
+        estoque[id_pdt].adicionar_produto(qtd)
 
 def remover(estoque):
     """
@@ -83,7 +86,7 @@ def remover(estoque):
     while True:
         try:
             qtd = int(input('Qual a quantidade que vai remover? '))
-            id = input('Digite o ID do produto: ')
+            id_pdt = input('Digite o ID do produto: ')
             break
         except ValueError:
             print('Precisa ser um número válido')
@@ -92,16 +95,16 @@ def remover(estoque):
             print(f'Tivemos um erro de {e}')
             print('Por favor, tente novamente mais tarde!')
             print('Vamos analisar a situação o mais breve possível!')
-    if id not in estoque:
+    if id_pdt not in estoque:
         print('ID incorreto! Por favor verifique e tente novamente.')
         return
     if qtd <= 0:
         print('Por gentileza, é necessário que a a quantidade seja maior que 0')
     else:
-        n = estoque[id].remover_produto(qtd)
+        n = estoque[id_pdt].remover_produto(qtd)
         if n == 0:
-            if estoque[id].quantidade == 0:
-                del estoque[id]
+            if estoque[id_pdt].quantidade == 0:
+                del estoque[id_pdt]
             else:
                 print('A quantidade foi removida com sucesso!')
 def ver_id(estoque):
@@ -110,8 +113,8 @@ def ver_id(estoque):
     
     :param estoque: Variável de controle estoque
     """
-    for id, pdt in estoque.items():
-        print(f'O id é {id} e ele é respectivo ao produto {pdt.nome}')
+    for id_pdt, pdt in estoque.items():
+        print(f'O id é {id_pdt} e ele é respectivo ao produto {pdt.nome}')
 
 def exibir_relat(estoque):
     """
@@ -121,7 +124,3 @@ def exibir_relat(estoque):
     """
     relat = relatorio.Relatorio(estoque)
     relat.exibir_relatorio()
-
-# pylint: disable=invalid-name
-cont = 0
-estoque = {}
