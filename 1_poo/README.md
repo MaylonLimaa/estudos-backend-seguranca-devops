@@ -4,7 +4,7 @@
 - Conceito de classe / objeto ✅
 - Atributos / métodos ✅
 - Encapsulamento ✅
-- Herança ⚠
-- Polimorfismo ⚠
-- Abstração ⚠
-- Composição ⚠
+- Herança ✅
+- Polimorfismo ✅
+- Abstração ✅
+- Composição ✅
