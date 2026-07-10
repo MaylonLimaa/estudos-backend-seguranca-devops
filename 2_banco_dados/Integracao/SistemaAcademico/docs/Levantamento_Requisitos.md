@@ -10,10 +10,10 @@ Ao longo do roadmap de estudos, novas funcionalidades serão incorporadas ao sis
 
 Inicialmente, o sistema será composto pelas seguintes entidades:
 
-- Aluno
-- Professor
-- Sala
-- Matéria
+* Aluno
+* Professor
+* Matéria
+* Nota
 
 ---
 
@@ -27,34 +27,36 @@ Por esse motivo, novas funcionalidades, melhorias e refatorações serão implem
 
 ---
 
-## Funcionalidades do sistema
+## Funcionalidades do Sistema
 
 ### Cadastro
 
-- Cadastrar alunos;
-- Cadastrar professores;
-- Cadastrar salas;
-- Cadastrar matérias.
+* Cadastrar alunos;
+* Cadastrar professores;
+* Cadastrar matérias.
 
 ### Relacionamentos
 
-- Associar alunos às salas;
-- Associar professores às salas.
+* Associar professores às matérias;
+* Registrar notas dos alunos em suas respectivas matérias.
 
-### Gestão acadêmica
+### Gestão Acadêmica
 
-- Registrar notas dos alunos;
-- Calcular automaticamente a média;
-- Informar se o aluno foi aprovado ou reprovado.
+* Registrar notas dos alunos;
+* Calcular automaticamente a média dos alunos;
+* Informar se o aluno foi aprovado ou reprovado.
 
 ### Consultas
 
-- Consultar as informações dos alunos.
+* Consultar informações dos alunos;
+* Consultar informações dos professores;
+* Consultar matérias cadastradas;
+* Consultar notas dos alunos.
 
 ### Manutenção
 
-- Alterar informações cadastradas;
-- Remover registros do sistema.
+* Alterar informações cadastradas;
+* Remover registros do sistema.
 
 ---
 
@@ -62,44 +64,44 @@ Por esse motivo, novas funcionalidades, melhorias e refatorações serão implem
 
 O sistema será composto pelas seguintes entidades:
 
-- Aluno;
-- Professor;
-- Sala;
-- Matéria.
+* Aluno;
+* Professor;
+* Matéria;
+* Nota.
 
 ---
 
-## Regras de negócio
+## Regras de Negócio
 
 ### Sistema
 
-- Cada CPF deverá ser único;
-- Cada matrícula deverá ser única;
-- Não será permitido o cadastro de registros duplicados;
-- O e-mail deverá possuir um formato válido.
-
-### Sala
-
-- Uma sala poderá possuir diversos alunos;
-- Cada sala possuirá apenas um professor responsável;
-- Cada sala possuirá apenas uma matéria.
-- Uma Sala só poderá ser considerada válida quando possuir pelo menos um aluno, um professor responsável e uma matéria atribuída.
+* Cada CPF deverá ser único;
+* Cada matrícula deverá ser única;
+* Não será permitido o cadastro de registros duplicados;
+* O e-mail deverá possuir um formato válido.
 
 ### Professor
 
-- Cada professor será responsável por apenas uma matéria.
+* Um professor poderá ser responsável por uma ou mais matérias.
+
+### Matéria
+
+* Cada matéria deverá possuir um professor responsável.
 
 ### Notas
 
-- As notas deverão estar entre 0 e 10;
-- A média será calculada automaticamente pelo sistema;
-- O aluno será considerado aprovado caso obtenha média igual ou superior a 6.
+* Toda nota deverá estar associada a um aluno e a uma matéria;
+* As notas deverão estar entre 0 e 10;
+* A média será calculada automaticamente pelo sistema;
+* A média não será armazenada no banco de dados;
+* O aluno será considerado aprovado caso obtenha média igual ou superior a 6;
+* O resultado da aprovação não será armazenado no banco de dados.
 
 ---
 
-## Requisitos não funcionais
+## Requisitos Não Funcionais
 
-- Todo o sistema deverá ser desenvolvido em Python;
-- A persistência dos dados será realizada utilizando SQLite;
-- O sistema deverá seguir os princípios da Programação Orientada a Objetos;
-- O projeto deverá possuir uma arquitetura modular, facilitando futuras manutenções e expansões.
+* Todo o sistema deverá ser desenvolvido em Python;
+* A persistência dos dados será realizada utilizando SQLite;
+* O sistema deverá seguir os princípios da Programação Orientada a Objetos;
+* O projeto deverá possuir uma arquitetura modular, facilitando futuras manutenções e expansões.

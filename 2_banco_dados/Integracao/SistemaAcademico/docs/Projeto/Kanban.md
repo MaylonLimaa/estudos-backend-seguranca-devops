@@ -5,10 +5,9 @@
 - [x] Levantamento de Requisitos
 - [x] Especificação do Sistema
 - [X] Regras de Negócio
-- [ ] Modelo Conceitual
+- [X] Modelo Conceitual
 - [ ] Modelo Relacional
 - [ ] Diagrama de Classes
-- [ ] Casos de Uso
 
 ---
 
